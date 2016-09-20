@@ -11,7 +11,7 @@ const completeChecksum = isbn =>
     .filter(d => !isNaN(d))
     .reduce((sum, d, i) => sum + multiplyerByPosition(i) * d, 0);
 
-let checksumDigit = isbn => 10 - completeChecksum(isbn) % 10;
+const checksumDigit = isbn => 10 - completeChecksum(isbn) % 10;
 
 console.log(checksumDigit("4567"));
 
