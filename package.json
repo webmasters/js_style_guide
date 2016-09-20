@@ -1,0 +1,28 @@
+{
+  "name": "js_style_guide",
+  "version": "1.0.0",
+  "description": "Owl.institute's JS Style Guide",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "node_modules/eslint/bin/eslint.js examples"
+  },
+  "author": "Owl.institute",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.5.0",
+    "eslint-config-airbnb": "^11.1.0",
+    "eslint-config-google": "^0.6.0",
+    "eslint-config-standard": "^6.0.1",
+    "eslint-plugin-import": "^1.15.0",
+    "eslint-plugin-jsx-a11y": "^2.2.2",
+    "eslint-plugin-promise": "^2.0.1",
+    "eslint-plugin-react": "^6.3.0",
+    "eslint-plugin-standard": "^2.0.0"
+  },
+  "dependencies": {
+    "eslint-config-standard": "^6.0.1"
+  }
+}
