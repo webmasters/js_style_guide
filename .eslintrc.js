@@ -41,25 +41,31 @@ module.exports = {
 
         /* Implicit, ie. not mentioned in the documented rules */
         "linebreak-style": ["error", "unix"],
-        "strict": ["error", "global"],
+        "eol-last": "error",
         "no-trailing-spaces": "error",
+
+        "strict": ["error", "global"],
+
         "prefer-arrow-callback": "error",
         "arrow-parens": ["error", "as-needed"],
         "arrow-spacing": ["error", {
                 "after": true,
                 "before": true
         }],
+
         "eqeqeq": "error",
         "dot-location": ["error", "property"],
+
         "no-unused-vars": "error",
         "no-const-assign": "error",
+
+        "array-bracket-spacing": "error",
         "space-unary-ops": "error",
         "space-before-blocks": "error",
-        "eol-last": "error",
+
         "comma-spacing": "error",
         "comma-style": "error",
-        "comma-dangle": "error",
-        "array-bracket-spacing": "error"
+        "comma-dangle": "error"
 
 /*
         "accessor-pairs": "error",
