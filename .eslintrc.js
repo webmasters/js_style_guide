@@ -11,25 +11,36 @@ module.exports = {
         "sourceType": "script",
     },
     "rules": {
-        "linebreak-style": ["error", "unix"],
+        /* Official, in the books */
+
+        /* General */
         "max-statements-per-line": "error",
         "semi": "error",
         "no-magic-numbers": ["error",
           {"ignore": [0, 1, 2, 3, 10]}],
         "space-infix-ops": "error",
         "no-multiple-empty-lines": "error",
+
+        /* Variables & Constants */
         "no-undef": "error",
-        "no-var": "error",
         "prefer-const": "error",
-        "keyword-spacing": "error",
+        "no-var": "error",
+
+        /* Naming */
+        "camelcase": "error",
+
+        /* Blocks and Indention */
         "brace-style": [
           "error", "1tbs", { "allowSingleLine": true }
         ],
         "indent": ["error", 2],
+        "keyword-spacing": "error",
+
+        /* Functions */
         "max-statements": ["error", 10],
-        "no-unused-vars": "error",
 
         /* Implicit, ie. not mentioned in the documented rules */
+        "linebreak-style": ["error", "unix"],
         "strict": ["error", "global"],
         "no-trailing-spaces": "error",
         "prefer-arrow-callback": "error",
@@ -40,6 +51,7 @@ module.exports = {
         }],
         "eqeqeq": "error",
         "dot-location": ["error", "property"],
+        "no-unused-vars": "error",
         "no-const-assign": "error",
         "space-unary-ops": "error",
         "space-before-blocks": "error",
@@ -47,16 +59,14 @@ module.exports = {
         "comma-spacing": "error",
         "comma-style": "error",
         "comma-dangle": "error",
+        "array-bracket-spacing": "error"
 
 /*
         "accessor-pairs": "error",
-        "array-bracket-spacing": "error",
         "array-callback-return": "error",
         "arrow-body-style": "error",
         "block-scoped-var": "error",
-        "block-spacing": "error",
         "callback-return": "error",
-        "camelcase": "error",
         "complexity": "error",
         "class-methods-use-this": "error",
         "computed-property-spacing": "error",
@@ -124,7 +134,6 @@ module.exports = {
         "no-lone-blocks": "error",
         "no-lonely-if": "error",
         "no-loop-func": "error",
-
         "no-mixed-operators": "off",
         "no-mixed-requires": "error",
         "no-multi-spaces": "error",
@@ -158,9 +167,7 @@ module.exports = {
         "no-sync": "error",
         "no-tabs": "error",
         "no-template-curly-in-string": "error",
-        "no-ternary": "off",
         "no-throw-literal": "error",
-
         "no-undef-init": "error",
         "no-undefined": "error",
         "no-underscore-dangle": "error",
